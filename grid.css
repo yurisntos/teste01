@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+}
+
+.row{
+    margin: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 15px;
+}
+
+.col-1{ width: 10%; float: left;}
+.col-2{ width: 20%; float: left;}
+.col-3{ width: 30%; float: left;}
+.col-4{ width: 40%; float: left;}
+.col-5{ width: 50%; float: left;}
+.col-6{ width: 60%; float: left;}
+.col-7{ width: 70%; float: left;}
+.col-8{ width: 80%; float: left;}
+.col-9{ width: 90%; float: left;}
+.col-10{ width: 100%; float: left;}
+
+.row-flex{
+    display: flex;
+}
+
+.col{
+    width: 100%;
+    padding: 5px;
+}
+
+@media screen and (max-width:700px){
+    [class^="col-"]{width: 100%;}
+
+}
